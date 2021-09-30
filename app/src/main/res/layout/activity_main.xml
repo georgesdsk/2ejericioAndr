@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/entradaTexto"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:hint="@string/edit_message"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:onClick="cambiarColor"
+       />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+
+
+        android:backgroundTint="#FFE500"
+        android:onClick="cambiarColores"
+      />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#001AFF"
+        android:onClick="cambiarColores"
+        app:icon="@drawable/ic_launcher_foreground"
+       />
+
+    <TextView
+        android:id="@+id/salidaTexto"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:text="enviar"
+      />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
